@@ -1,0 +1,29 @@
+1. Here are the contributions of every member:
+======================================================================
+
+Dweepa : Wrote basic and efficient string alignment code, 
+         wrote code for graph plotting, analyzed the CPU and MemoryPlot graphs.
+Akanksha : Wrote basic and efficient string alignment code, 
+           generated and tested different input files, plotted and analyzed the CPU and MemoryPlot graphs.
+Kavya: Wrote basic and efficient string alignment code,
+       generated and tested different input files, plotted and analyzed the CPU and MemoryPlot graphs.
+Dweepa, Akanksha, Kavya: wrote all the code in navigator and driver format and compared both the versions and drew conclusions.
+
+
+
+2. Here are some of our observations:
+=======================================================================
+
+a) Sample size VS Memory Plot :
+---------------------------------
+Some of the key things we noticed was that the difference in memory usage was more obvious when the length of the original input strings got larger and larger.  
+The factor that limits dynamic programing's application often is not its running time (O(nm)) but the quadratic space requirement, where m and n are the length of two sequence (basic). 
+The Hirschberg algorithm (efficient) reduces the space requirement from O(nm) to O(n) by involving divide and conquer technique in the dynamic Programming process. 
+We were able to see that the efficient Hirschberg algorithm was far more efficient in general than the basic Needleman algorithm as it displayed almost a linear trend in memory usage for the sample sizes 2-20k, since we divide the problem into several recursive calls, the space needed for the computation is reused from one call to the next.
+
+b) Sample size VS CPU Time Plot :
+----------------------------------
+The time complexity of both needleman (basic) and Hirschberg(efficient) is the same (O(mn)); however we observe from the plots that the Hirschberg algorithm takes roughly twice the time as Needleman to run. 
+This is clearly noticeable as the input sizes increase, not so much when they are small. 
+
+Fun fact — The time taken by some of the longer and more complicated strings is a direct parallel to the time taken in the real world to align actual DNA sequences.
